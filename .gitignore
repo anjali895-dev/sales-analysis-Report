@@ -1,0 +1,9 @@
+# Raw data is confidential: never upload it
+data/*.xlsx
+data/*.csv
+*.csv
+*.pkl
+output/
+__pycache__/
+*.pbix
+~$*.xlsx
