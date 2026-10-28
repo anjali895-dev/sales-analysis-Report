@@ -1,10 +1,3 @@
-Place the two raw sales files here to run the code:
-
-- `Sep part 1.xlsx`
-- `Sep part 2.xlsx`
-
-The raw data is confidential and is not included in this repository.
-
 # Sales Analysis and Performance Report: September 2024
 
 Analysis of one month of sales data (about 19.2 lakh invoice lines) to understand where sales come from, what is under-performing, and how to improve. Built with Python (pandas), Excel and Power BI.
@@ -17,14 +10,16 @@ Analysis of one month of sales data (about 19.2 lakh invoice lines) to understan
 - Only **3.9% of invoices** (above Rs 10,000) bring 53.7% of revenue; half of all invoices are under Rs 250
 - **68 of 958 products** generate 80% of revenue
 
-## What is in this repository
+## Files in this repository
 
-| Folder | Contents |
+| File | Contents |
 |---|---|
-| `report/` | Final Excel report: overview, geography, performance, products, invoices, insights, recommendations, assumptions |
-| `code/` | Python script (`sales_analysis.py`), written as cells that can be run one by one |
-| `powerbi/` | `PowerBI_Data.xlsx`: summary tables used by the Power BI dashboard |
-| `data/` | Empty on purpose: raw data is confidential and not uploaded |
+| `Sales_Analysis_Report_Sep2024.xlsx` | Final Excel report: overview, geography, performance, products, invoices, insights, recommendations, assumptions |
+| `sales_analysis.py` | Python script, written as cells that can be run one by one |
+| `PowerBI_Data.xlsx` | Summary tables used by the Power BI dashboard |
+| `requirements.txt` | Python libraries needed |
+
+The raw sales data is confidential and is not included in this repository.
 
 ## Approach
 
@@ -37,16 +32,15 @@ Analysis of one month of sales data (about 19.2 lakh invoice lines) to understan
 
 ## How to run
 
-```
-pip install -r requirements.txt
-python code/sales_analysis.py      # or run the file cell by cell in VS Code / Jupyter
-```
+1. Install the libraries: `pip install -r requirements.txt`
+2. Create a folder named `data` next to `sales_analysis.py` and put the two raw files in it, named `Sep part 1.xlsx` and `Sep part 2.xlsx`
+3. Run `python sales_analysis.py`, or open the file in VS Code and run it cell by cell
 
-Put the two raw files in the `data/` folder first. The first run is slow (large files); results are written to an `output/` folder.
+The first run is slow because the files are large. Results are written to an `output` folder.
 
 ## Dashboard walkthrough
 
-Video: **["C:\Users\lenovo\Videos\Data_Analysis_Report1.mp4"]**
+Power-BI: "C:\Users\lenovo\Downloads\Sales_Analysis_Report.pbix"
 
 ## Limitations
 
@@ -57,4 +51,4 @@ Video: **["C:\Users\lenovo\Videos\Data_Analysis_Report1.mp4"]**
 
 ## Author
 
-Anjali | [[LinkedIn profile link](https://www.linkedin.com/in/anjali-sharma-34bb8b143)] | [anjali8959@gmail.com]
+Anjali | [LinkedIn](https://www.linkedin.com/in/anjali-sharma-34bb8b143) | anjali8959@gmail.com
